@@ -17,9 +17,11 @@ public class Ej03_main {
 		
 		System.out.println("----------------\n");
 
-		m2 = meterValor(m2, 2, 3, 3.3);
+		m2 = meterValor(m2, 2, 2, 3.3);
 		m2 = meterValor(m2, 10, 3, 3.3);
 		m2 = meterValor(m2, 4, 3, 3.3);
+		m2 = meterValor(m2, 0, 0, 3.3);
+		m2 = meterValor(m2, 1, 0, 3.3);
 		
 		System.err.println();
 		

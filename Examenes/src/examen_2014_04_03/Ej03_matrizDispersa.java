@@ -20,7 +20,7 @@ public class Ej03_matrizDispersa {
 	
 	public void setValor(int x, int y, double valor) throws Exception{
 		
-		if(this.sx < x || this.sy < y)
+		if(this.sx <= x || this.sy <= y)
 			throw new Exception("FueraDeRango["+x+","+y+"]");
 		
 		boolean reescrito = false;
@@ -62,8 +62,8 @@ public class Ej03_matrizDispersa {
 	public String toString(){
 		String ver = "";
 		
-		for(int x=0; x<sx; x++){
-			for(int y=0; y<sy; y++)
+		for(int y=0; y<sy; y++){
+			for(int x=0; x<sx; x++)
 				ver += valorEn(x, y) + " ";
 			ver += "\n";
 		}
